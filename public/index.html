@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My Cook Book</title>
+    <meta name="description" content="My Cook Book">
+    <meta name="author" content="Sajal Sood">
+    <link rel="stylesheet" href="./css/main.css?v=1.0">
+  </head>
+
+  <body>
+    <div id="recipe-root" class="recipe-container">
+      <div class="recipe-heading">
+          <h1>Welcome to MyCookBook</h1>
+          <p>A recipe storage and search application</p>
+      </div>
+      <div class="recipe-grid">
+          <div class="status"></div>
+          <div class="auth">
+            <input type="text" class="user-name form-control" placeholder="Enter Name Here"/>
+            <input type="button" class="btn btn-login" value="Login" />
+            <input type="button" class="btn btn-logout" value="Logout" />
+          </div>
+          <div class="add-recipe">
+            <input type="button" class="btn btn-add-recipe" value="Add New Recipe" />
+          </div>
+          <div class="home">
+            <ol class="recipes item-group"></ol>
+          </div>
+          <div class="recipe">
+            <div class="recipe-home">
+              <input type="button" class="btn btn-home" value="Return To Home" />
+            </div>
+            <div class="recipe-details"></div>
+            <div class="recipe-add ">
+              <form class="form-group">
+                <input type="text" class="title form-control" placeholder="Enter Title Here" />
+                <textarea rows="5" cols="10" class="ingredients form-control" placeholder="Enter Ingredients Here" ></textarea>
+                <textarea type="textarea" rows="10" cols="10" class="instructions form-control" placeholder="Enter Instructions Here"></textarea>
+                <input type="submit" class="btn btn-submit" value="Submit" />
+              </form>
+            </div>
+          </div>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
